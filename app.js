@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 mongoose
   .connect(
-    "mongodb+srv://Sumit-Admin:t4PpoWDDqiZQQPd4@cluster0.ubbrnwl.mongodb.net/blogDB"
+   `process.env.MONGODO_URL`
   )
   .then(console.log("Database has been connected!"));
 
